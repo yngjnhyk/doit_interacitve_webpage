@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="float.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 800px;
+        margin: 100px auto;
+        border: 5px solid black;
+      }
+      .wrap::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .wrap .left {
+        width: 400px;
+        height: 400px;
+        background-color: pink;
+      }
+      .wrap .right {
+        width: 400px;
+        height: 400px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <section class="left"></section>
+      <section class="right"></section>
+    </div>
+  </body>
+</html>
